@@ -1,0 +1,13 @@
+,case:concept:name,concept:name,time:timestamp,resource
+0,1,activity №1,13:00:00 14.03.2021,worker №1
+1,2,activity №1,14:00:00 14.03.2021,worker №1
+2,1,activity №2,13:45:00 14.03.2021,worker №2
+3,1,activity №3,14:00:00 14.03.2021,worker №2
+4,2,activity №3,14:15:00 14.03.2021,worker №3
+5,3,activity №1,14:10:00 14.03.2021,worker №1
+6,2,activity №2,14:45:00 14.03.2021,worker №3
+7,3,activity №2,14:30:00 14.03.2021,worker №4
+8,3,activity №3,15:00:00 14.03.2021,worker №4
+9,1,activity №4,14:05:00 14.03.2021,worker №2
+10,2,activity №4,14:50:00 14.03.2021,worker №3
+11,3,activity №4,15:05:00 14.03.2021,worker №4
