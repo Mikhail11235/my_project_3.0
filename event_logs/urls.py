@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import CreatePostView, CsvFileDetailView
+from .views import get_file_and_type, CsvFileDetailView
 
 
 urlpatterns = [
-    path('', CreatePostView.as_view(), name='home'),
+    path('', get_file_and_type, name='home'),
     path('detail/', CsvFileDetailView.as_view(), name='detail')
 ]
