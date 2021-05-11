@@ -1,10 +1,11 @@
 from django.views.generic import ListView
-from . models import ModelImage
+from .models import ModelImage
 from django.urls import reverse_lazy
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
 from .forms import Form
+
 
 class CsvFileDetailView(ListView):
     model = ModelImage
@@ -19,7 +20,7 @@ def get_file_and_type(request):
         form = Form(request.POST, request.FILES)
         if form.is_valid():
             post = form.save()
-            instance = ModelImage.objects.create(file_id = post.id)
+            instance = ModelImage.objects.create(file_id=post.id)
             instance.save()
             if post.file_is_valid():
                 return HttpResponseRedirect(reverse_lazy('detail'))
@@ -28,4 +29,4 @@ def get_file_and_type(request):
     else:
         form = Form()
 
-    return render(request, 'home.html', {'form': form}) 
+    return render(request, 'home.html', {'form': form})
